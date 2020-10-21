@@ -1,5 +1,5 @@
 let bubbles = [];
-let n = 20;
+let slider;
 
 function setup() {
   canvas = createCanvas(600, 600);
@@ -12,13 +12,13 @@ function setup() {
     let RGB = [random(255), random(255), random(255)];
     bubbles[i] = new Bubble(x, y, rad, RGB);
   }
-  n = createSlider(1, 100, 20).value()  
+  slider = createSlider(1, 100, 20)  
   p = createP('This is another paragraph created in JS')
 }
 
 function draw() {
   background(0);
-  for (let i = 0; i < n; i++){
+  for (let i = 0; i < slider.value(); i++){
     bubbles[i].show();
     bubbles[i].move();
   }
