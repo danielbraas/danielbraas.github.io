@@ -1,7 +1,9 @@
 let bubbles = [];
 
 function setup() {
-  createCanvas(600, 600);
+  canvas = createCanvas(600, 600);
+  canvas.style('margin: auto');
+
   for (let i = 0; i < 50; i++){
     let x = random(width);
     let y = random(height);
