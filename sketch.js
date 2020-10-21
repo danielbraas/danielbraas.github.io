@@ -12,7 +12,8 @@ function setup() {
     let RGB = [random(255), random(255), random(255)];
     bubbles[i] = new Bubble(x, y, rad, RGB);
   }
-  slider = createSlider(1, 100, 20)  
+  slider = createSlider(1, 100, 20);
+  slider.style('width', '100px');
   p = createP('This is another paragraph created in JS')
 }
 
