@@ -2,7 +2,7 @@ let bubbles = [];
 
 function setup() {
   canvas = createCanvas(600, 600);
-  canvas.style('margin: auto');
+  ///canvas.style('margin: auto');
 
   for (let i = 0; i < 50; i++){
     let x = random(width);
@@ -12,7 +12,7 @@ function setup() {
     bubbles[i] = new Bubble(x, y, rad, RGB);
   }
   p = createP('This is another paragraph created in JS')
-  p.style('float: right')
+  //p.style('float: right')
 }
 
 function draw() {
